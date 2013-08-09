@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dec8f25f-1884-4c5e-9f07-d8b70cf8fd4a" name="Default" comment="" />
+    <list default="true" id="dec8f25f-1884-4c5e-9f07-d8b70cf8fd4a" name="Default" comment="">
+      <change type="DELETED" beforePath="E:\Dev\bukkit\frame-market\FrameMarket.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="frame-market.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="dec8f25f-1884-4c5e-9f07-d8b70cf8fd4a" time="1376061700525" ignored="false" />
     <file path="/LICENSE" changelist="dec8f25f-1884-4c5e-9f07-d8b70cf8fd4a" time="1376058982896" ignored="false" />
     <file path="/README.md" changelist="dec8f25f-1884-4c5e-9f07-d8b70cf8fd4a" time="1376058419037" ignored="false" />
-    <file path="/.gitignore" changelist="dec8f25f-1884-4c5e-9f07-d8b70cf8fd4a" time="1376061679418" ignored="false" />
+    <file path="/.gitignore" changelist="dec8f25f-1884-4c5e-9f07-d8b70cf8fd4a" time="1376061958992" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +104,7 @@
       <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="3" column="5" selection-start="17" selection-end="17" vertical-scroll-proportion="0.088541664">
               <folding />
             </state>
           </provider>
@@ -498,7 +502,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="3" column="5" selection-start="17" selection-end="17" vertical-scroll-proportion="0.088541664">
           <folding />
         </state>
       </provider>
