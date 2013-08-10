@@ -8,6 +8,10 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import javax.persistence.PersistenceException;
+import java.util.ArrayList;
+import java.util.List;
+
 public class FrameMarket extends JavaPlugin {
     public void onEnable(){
         getLogger().info("Frame Market Enabled");
@@ -23,6 +27,23 @@ public class FrameMarket extends JavaPlugin {
 
         PluginManager pm = getServer().getPluginManager();
         pm.registerEvents(new MarketListener(this), this);
+
+        setupDatabase();
+    }
+
+    public List<Class<?>> getDatabaseClasses() {
+        List<Class<?>> list = new ArrayList<Class<?>>();
+        list.add(Shop.class);
+        return list;
+    }
+
+    private void setupDatabase() {
+        try {
+            getDatabase().find(Shop.class).findRowCount();
+        } catch (PersistenceException ex) {
+            getLogger().info("Installing database..");
+            installDDL();
+        }
     }
 
     public void onDisable(){
