@@ -21,9 +21,6 @@
         <mkdir dir="build/jar"/>
         <jar destfile="build/jar/FrameMarket.jar" basedir="build/classes">
             <fileset file="plugin.yml" />
-         <!-- <manifest>
-                <attribute name="Main-Class" value="com.ineentho.frameMarket.FrameMarket"/>
-            </manifest>-->
         </jar>
     </target>
 
