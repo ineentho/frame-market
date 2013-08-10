@@ -1,0 +1,35 @@
+<project>
+
+    <path id="external.classpath">
+        <pathelement location="../../bukkit/bukkit-1.6.2-R0.1.jar"/>
+    </path>
+
+    <target name="clean">
+        <delete dir="build"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="build/classes"/>
+        <javac srcdir="src" destdir="build/classes">
+            <classpath>
+                <path refid="external.classpath" />
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="jar" depends="compile">
+        <mkdir dir="build/jar"/>
+        <jar destfile="build/jar/FrameMarket.jar" basedir="build/classes">
+            <fileset file="plugin.yml" />
+         <!-- <manifest>
+                <attribute name="Main-Class" value="com.ineentho.frameMarket.FrameMarket"/>
+            </manifest>-->
+        </jar>
+    </target>
+
+     <target name="publish">
+         <copyfile src="build/jar/FrameMarket.jar" dest="../../test-server/plugins/FrameMarket.jar"></copyfile>
+     </target>
+
+    <target name="main" depends="clean,jar,publish" />
+</project>
