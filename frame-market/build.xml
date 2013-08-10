@@ -1,5 +1,4 @@
 <project>
-
     <path id="external.classpath">
         <pathelement location="../../bukkit/bukkit-1.6.2-R0.1.jar"/>
     </path>
